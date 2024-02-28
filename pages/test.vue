@@ -1,0 +1,3 @@
+<template>
+    Vue teST
+</template>

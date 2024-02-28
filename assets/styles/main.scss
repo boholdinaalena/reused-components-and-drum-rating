@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Regular.ttf) format("truetype");
+  font-weight: normal;
+  color: #ffff;
+}
+
+:root {
+  --green: hsl(125, 100%, 62%);
+  --red: hsl(9, 100%, 50%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #010423;
+  color: white;
+}

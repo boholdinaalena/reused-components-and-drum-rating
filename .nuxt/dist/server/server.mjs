@@ -1,0 +1,1 @@
+export { default } from "file:///Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
