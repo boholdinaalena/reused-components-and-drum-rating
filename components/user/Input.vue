@@ -4,7 +4,7 @@
       class="input" 
       :class="{ 'input-errors': errors }"
       v-model="value"
-      type="email" 
+      type="text" 
       :placeholder="placeholder"/>
     <div class="errors">
       {{ errors }}
