@@ -1,7 +1,7 @@
 <template>
-  <div ref="drumUpdate" class="drum" :key="componentKey">
+  <div ref="drumUpdate" class="drum">
     <div
-      class="drum-number"
+      class="drum-number" :key="componentKey"
       :style="{ animationDuration: `${(userInput * 0.9) / drum}s` }"
     >
       <p class="drum-number-value" v-for="num in drum" :key="num">
@@ -17,7 +17,6 @@
     </div>
   </div>
   <div class="restart">
-    <form>
       <UserInput
         class="modal-input"
         v-model="userInput"
@@ -29,7 +28,6 @@
         @click="restart(userInput)"
         >Запустить</BaseButton
       >
-    </form>
   </div>
 </template>
 
@@ -68,8 +66,8 @@ const emitEvent = () => {
 
 const userInput = ref("");
 function restart(arg) {
-  forceRender();
   valueLoop(arg);
+  forceRender();
 }
 
 onMounted(() => {
@@ -133,18 +131,14 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   margin: 30px 0;
-  gap: 20px;
+  gap: 30px;
+}
 
-  form {
-    display: flex;
-    gap: 30px;
-
-    input {
-      width: 90%;
-    }
-  }
+.modal-input {
+  display: flex;
+  flex: 1;
 }
 
 @keyframes ruletka {
