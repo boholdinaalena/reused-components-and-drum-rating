@@ -1,0 +1,258 @@
+{
+  "resolvedId": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/user/Input.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"container\">\n    <input \n      class=\"input\" \n      :class=\"{ 'input-errors': errors }\"\n      v-model=\"value\"\n      type=\"text\" \n      :placeholder=\"placeholder\"/>\n    <div class=\"errors\">\n      {{ errors }}\n    </div>\n  </div>\n</template>\n\n<script setup>\n\nconst props = defineProps({  \n    placeholder: {\n    type: String,\n    default: \"example@mail.com\",\n  },\n  errors: {\n    type: String,\n    required: false,\n  }\n});\n\nconst value = defineModel();\n\n\n</script>\n\n<style lang=\"scss\" scoped>\n\n.container {\n  width: 100%;\n}\n\n.input {\n  border-radius: 10px;\n  padding: 10px;\n  background: none;\n  border: 1px solid rgb(135, 135, 255);\n  outline: none;\n  color: inherit;\n  font-size: 16px;\n  width: 100%;\n}\n\n.input-errors {\n  border: 1px solid red;\n}\n.errors {\n  display: flex;\n  justify-content: center;\n  color: red;\n  font-size: 15px;\n}\n</style>\n",
+      "start": 1709841038834,
+      "end": 1709841038870,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709841038870,
+      "end": 1709841038870,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { useModel as _useModel, mergeModels as _mergeModels } from 'vue'\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nconst _sfc_main = {\n  __name: 'Input',\n  __ssrInlineRender: true,\n  props: /*#__PURE__*/_mergeModels({  \n    placeholder: {\n    type: String,\n    default: \"example@mail.com\",\n  },\n  errors: {\n    type: String,\n    required: false,\n  }\n}, {\n    \"modelValue\": {},\n    \"modelModifiers\": {},\n  }),\n  emits: [\"update:modelValue\"],\n  setup(__props) {\n\n\nconst props = __props;\n\nconst value = _useModel(__props, \"modelValue\");\n\n\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"container\" }, _attrs))\n  } data-v-0d4b73cb><input class=\"${\n    _ssrRenderClass([{ 'input-errors': __props.errors }, \"input\"])\n  }\"${\n    _ssrRenderAttr(\"value\", value.value)\n  } type=\"text\"${\n    _ssrRenderAttr(\"placeholder\", __props.placeholder)\n  } data-v-0d4b73cb><div class=\"errors\" data-v-0d4b73cb>${\n    _ssrInterpolate(__props.errors)\n  }</div></div>`)\n}\n}\n\n}\n\n\nimport \"/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/user/Input.vue?vue&type=style&index=0&scoped=0d4b73cb&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/user/Input.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-0d4b73cb\"]])",
+      "start": 1709841038870,
+      "end": 1709841038872,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/user/Input.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div class=\"container\">\n    <input \n      class=\"input\" \n      :class=\"{ 'input-errors': errors }\"\n      v-model=\"value\"\n      type=\"text\" \n      :placeholder=\"placeholder\"/>\n    <div class=\"errors\">\n      {{ errors }}\n    </div>\n  </div>\n</template>\n\n<script setup>\n\nconst props = defineProps({  \n    placeholder: {\n    type: String,\n    default: \"example@mail.com\",\n  },\n  errors: {\n    type: String,\n    required: false,\n  }\n});\n\nconst value = defineModel();\n\n\n</script>\n\n<style lang=\"scss\" scoped>\n\n.container {\n  width: 100%;\n}\n\n.input {\n  border-radius: 10px;\n  padding: 10px;\n  background: none;\n  border: 1px solid rgb(135, 135, 255);\n  outline: none;\n  color: inherit;\n  font-size: 16px;\n  width: 100%;\n}\n\n.input-errors {\n  border: 1px solid red;\n}\n.errors {\n  display: flex;\n  justify-content: center;\n  color: red;\n  font-size: 15px;\n}\n</style>\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAcc;AACd;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OASZ,CAAC;AACH;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,SAAW,sBAAC,CAAC,CAAC;AAC5B;AACA;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709841038872,
+      "end": 1709841038872,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038872,
+      "end": 1709841038872,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038872,
+      "end": 1709841038872,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709841038872,
+      "end": 1709841038872,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709841038872,
+      "end": 1709841038872,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709841038872,
+      "end": 1709841038872,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038872,
+      "end": 1709841038872,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709841038872,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709841038873,
+      "end": 1709841038873,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709841038873,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709841038873,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709841038874,
+      "end": 1709841038874,
+      "order": "normal"
+    }
+  ]
+}

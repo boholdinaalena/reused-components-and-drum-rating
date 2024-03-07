@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Modal.vue?vue&type=style&index=0&scoped=b9aa7862&lang.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.modal-bg {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background-color: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow-y: scroll;\n}\n\n.modal {\n  width: 420px;\n  height: 500px;\n  margin: 70px 20px;\n  background-color: rgb(31, 52, 101);\n  border: 1px solid rgb(25, 36, 80);\n  border-radius: 20px;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  text-align: center;\n  font-size: 20px;\n  color: rgb(164, 194, 228);\n  z-index: -2;\n\n  &-glow {\n    width: 200px;\n    position: absolute;\n    z-index: -1;\n  }\n  \n  &-name,\n  &-control {\n    z-index: 1;\n    border-radius: 20px;\n    background-color: rgb(25, 36, 80);\n  }\n\n  &-name {\n    width: 100%;\n    font-size: 18px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 60px;\n    border-bottom-right-radius: 0px;\n    border-bottom-left-radius: 0px;\n    color: rgb(111, 169, 255);\n  }\n\n  &-input {\n    margin: 20px 0;\n  }\n  \n  &-close {\n    position: relative;\n    display: flex;\n    justify-content: right;\n    padding: 0;\n    box-shadow: insert none;\n    padding-right: 10px;\n\n    button {\n      margin-bottom: -60px;\n      background: none;\n      outline: none;\n      border: none;\n    }\n  }\n\n  &-timer {\n    position: absolute;\n    top: 13px;\n    right: 15px;\n  }\n\n  &-body {\n    padding-top: -50px;\n    padding: 0 40px;\n  }\n\n  &-img {\n    img {\n      width: 120px;\n      margin-bottom: 20px;\n    }\n  }\n\n  &-title {\n    font-size: 22px;\n    font-weight: bolder;\n    margin: 20px 0;\n    margin-top: 0;\n  }\n\n  &-cones {\n    width: fit-content;\n    margin: 20px auto;\n    padding: 10px 20px;\n    background: #0900b1;\n    border-radius: 20px;\n    display: flex;\n    align-items: center;\n    gap: 5px;\n    font-weight: bolder;\n    font-size: 20pt;\n    color: white;\n\n    img {\n      width: 30px;\n    }\n  }\n\n  &-control {\n    display: flex;\n    flex-direction: row-reverse;\n    justify-content: center;\n    gap: 30px;\n    padding: 20px;\n    border-top-right-radius: 0px;\n    border-top-left-radius: 0px;\n  }\n}\n\n",
+      "start": 1709841038773,
+      "end": 1709841038773,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Modal.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Modal.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <Teleport to=\"body\">\n    <div class=\"modal-bg\" v-if=\"modal\">\n      <div class=\"modal\" :style=\"{ ...styleModal }\">\n        <div class=\"modal-glow\" v-if=\"imgSrc\"\n          :style=\"{\n                boxShadow: '100px 90px 90px 10px ' + glowColor\n          }\"></div>\n        <div class=\"modal-header\">\n          <div class=\"modal-close\">\n            <BaseReverseTimer \n              class=\"modal-timer\" \n              v-if=\"haveTimer\" \n              @customEvent=\"hideOrNext()\"\n              :countSecond=\"countSecondInTimer\"/>\n            <button v-if=\"haveClose\" @click=\"hideOrNext\">\n              <Icon name=\"fxemoji:ballottscriptx\" size=\"25px\" />\n            </button>\n          </div>\n          <div class=\"modal-name\">\n            {{ name }}\n          </div>\n        </div>\n        <div class=\"modal-body\">\n          <div class=\"modal-img\" v-if=\"imgSrc\">\n            <NuxtImg :src=\"imgSrc\"></NuxtImg>\n          </div>\n          <div class=\"modal-title\" :style=\"{ color: titleColor }\">\n            {{ title }}\n          </div>\n          <div :style=\"{ ...styleText }\">\n            <slot />\n          </div>\n          <div class=\"modal-cones\" v-if=\"haveCones\">\n            <NuxtImg src=\"/cone.png\" :mainColor=\"'hsl(115, 100%, 50%)'\"></NuxtImg>\n            {{ conesAmount }}M\n          </div>\n          <UserInput class=\"modal-input\" v-if=\"haveInput\" v-model=\"userInput\" :errors=\"errMsgInput\"/>\n        </div>\n\n        <div class=\"modal-control\" v-if=\"haveBtn\">\n          <BaseButton v-if=\"haveInput && !activateBtn\"\n            @click=\"remindAboutInput()\"\n            :mainColor=\"'hsl(200, 0%, 50%)'\">\n            {{  btnText }}\n          </BaseButton>\n          <BaseButton v-else\n            :imgSrc=\"btnImg\"\n            :mainColor=\"btnColor\"\n            @click=\"hideOrNext(true)\">\n            {{ btnText }}\n          </BaseButton>\n          <BaseButton\n            v-if=\"haveTwoBtn\"\n            @click=\"hideOrNext(false)\"\n            :mainColor=\"'hsl(9, 100%, 50%)'\"\n          >\n            No\n          </BaseButton>\n        </div>\n        <div v-else></div>\n      </div>\n    </div>\n  </Teleport>\n</template>\n\n<script setup>\nimport { onClickOutside } from \"@vueuse/core\";\nimport { ref, defineExpose } from \"vue\";\n\nconst props = defineProps({\n  //main params\n  name: {\n    type: String,\n    default: \"Название окна\",\n  },\n\n  title: {\n    type: String,\n    default: \"\",\n  },\n\n  titleColor: {\n    type: String,\n    default: \"#ffffff\",\n  },\n\n  haveBtn: {\n    type: Boolean,\n    default: false,\n  },\n\n  haveTwoBtn: {\n    type: Boolean,\n    default: false,\n  },\n\n\n  btnText: {\n    type: String,\n    default: \"OK\",\n  },\n\n  btnColor: {\n    type: String,\n    default: \"hsl(115, 100%, 50%)\"\n  },\n\n  btnImg: {\n    type: String,\n    default: ''\n  },\n\n  haveInput: {\n    type: Boolean,\n    default: false\n  },\n\n  haveClose: {\n    type: Boolean,\n    default: false,\n  },\n\n  haveTimer: {\n    type: Boolean,\n    default: false\n  },\n\n  countSecondInTimer: {\n    type: Number,\n    default: 10,\n  },\n\n  imgSrc: {\n    type: String,\n    default: '',\n  },\n\n  glowColor: {\n    type: String,\n    default: 'red'\n  },\n\n  styleModal: {\n    type: Object,\n    default: () => {}\n  },\n\n  styleText: {\n    type: Object,\n    default: () => {}\n  },\n\n  haveCones: {\n    type: Boolean,\n    default: false,\n  },\n\n  conesAmount: {\n    type: String,\n    default: '9,000'\n  },\n});\n\nconst modal = ref(false);\n\nonClickOutside(modal, () => {\n  if (props.haveClose) {\n    hideOrNext();\n  }\n});\n\nconst activateBtn = ref(false)\nconst errMsgInput = ref('')\nconst remindAboutInput = () => {\n  errMsgInput.value = 'Обязательное поле'\n}\n\nconst userInput = ref(\"\")\nwatchEffect(() => {\n  if (userInput.value.length > 6) {\n    errMsgInput.value = ''\n    activateBtn.value = true\n  } else activateBtn.value = false\n})\n\nconst show = () => {\n  modal.value = true;\n};\nconst hideOrNext = () => {\n  modal.value = false;\n};\n\ndefineExpose({\n  show,\n  hideOrNext,\n});\n</script>\n\n<style lang=\"scss\" scoped>\n.modal-bg {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n  background-color: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow-y: scroll;\n}\n\n.modal {\n  width: 420px;\n  height: 500px;\n  margin: 70px 20px;\n  background-color: rgb(31, 52, 101);\n  border: 1px solid rgb(25, 36, 80);\n  border-radius: 20px;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  text-align: center;\n  font-size: 20px;\n  color: rgb(164, 194, 228);\n  z-index: -2;\n\n  &-glow {\n    width: 200px;\n    position: absolute;\n    z-index: -1;\n  }\n  \n  &-name,\n  &-control {\n    z-index: 1;\n    border-radius: 20px;\n    background-color: rgb(25, 36, 80);\n  }\n\n  &-name {\n    width: 100%;\n    font-size: 18px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 60px;\n    border-bottom-right-radius: 0px;\n    border-bottom-left-radius: 0px;\n    color: rgb(111, 169, 255);\n  }\n\n  &-input {\n    margin: 20px 0;\n  }\n  \n  &-close {\n    position: relative;\n    display: flex;\n    justify-content: right;\n    padding: 0;\n    box-shadow: insert none;\n    padding-right: 10px;\n\n    button {\n      margin-bottom: -60px;\n      background: none;\n      outline: none;\n      border: none;\n    }\n  }\n\n  &-timer {\n    position: absolute;\n    top: 13px;\n    right: 15px;\n  }\n\n  &-body {\n    padding-top: -50px;\n    padding: 0 40px;\n  }\n\n  &-img {\n    img {\n      width: 120px;\n      margin-bottom: 20px;\n    }\n  }\n\n  &-title {\n    font-size: 22px;\n    font-weight: bolder;\n    margin: 20px 0;\n    margin-top: 0;\n  }\n\n  &-cones {\n    width: fit-content;\n    margin: 20px auto;\n    padding: 10px 20px;\n    background: #0900b1;\n    border-radius: 20px;\n    display: flex;\n    align-items: center;\n    gap: 5px;\n    font-weight: bolder;\n    font-size: 20pt;\n    color: white;\n\n    img {\n      width: 30px;\n    }\n  }\n\n  &-control {\n    display: flex;\n    flex-direction: row-reverse;\n    justify-content: center;\n    gap: 30px;\n    padding: 20px;\n    border-top-right-radius: 0px;\n    border-top-left-radius: 0px;\n  }\n}\n\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709841038774,
+      "end": 1709841038774,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709841038774,
+      "end": 1709841038774,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709841038774,
+      "end": 1709841038774,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709841038774,
+      "end": 1709841038774,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709841038774,
+      "end": 1709841038774,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".modal-bg{align-items:center;background-color:rgba(0,0,0,.5);display:flex;height:100vh;justify-content:center;left:0;overflow-y:scroll;position:fixed;top:0;width:100vw}.modal{background-color:#1f3465;border:1px solid #192450;border-radius:20px;color:#a4c2e4;display:flex;flex-direction:column;font-size:20px;height:500px;justify-content:space-between;margin:70px 20px;text-align:center;width:420px;z-index:-2}.modal-glow{position:absolute;width:200px;z-index:-1}.modal-control,.modal-name{background-color:#192450;border-radius:20px;z-index:1}.modal-name{align-items:center;border-bottom-left-radius:0;border-bottom-right-radius:0;color:#6fa9ff;display:flex;font-size:18px;height:60px;justify-content:center;width:100%}.modal-input{margin:20px 0}.modal-close{box-shadow:insert none;display:flex;justify-content:right;padding:0 10px 0 0;position:relative}.modal-close button{background:none;border:none;margin-bottom:-60px;outline:none}.modal-timer{position:absolute;right:15px;top:13px}.modal-body{padding:0 40px}.modal-img img{margin-bottom:20px;width:120px}.modal-title{font-size:22px;font-weight:bolder;margin:0 0 20px}.modal-cones{align-items:center;background:#0900b1;border-radius:20px;color:#fff;display:flex;font-size:20pt;font-weight:bolder;gap:5px;margin:20px auto;padding:10px 20px;width:-moz-fit-content;width:fit-content}.modal-cones img{width:30px}.modal-control{border-top-left-radius:0;border-top-right-radius:0;display:flex;flex-direction:row-reverse;gap:30px;justify-content:center;padding:20px}",
+      "start": 1709841038774,
+      "end": 1709841038823,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Modal.vue",
+        "mappings": "AACA,UASE,mBAHA,gCACA,aAFA,aAGA,uBALA,OAOA,kBATA,eACA,MAEA,YASF,OAIE,yBACA,yBACA,mBAMA,cALA,aACA,sBAGA,eATA,aAOA,8BANA,iBAOA,kBATA,YAYA,WAEA,YAEE,kBADA,YAEA,WAGF,2BAIE,yBADA,mBADA,UAKF,YAKE,mBAGA,4BADA,6BAEA,cANA,aADA,eAIA,YAFA,uBAHA,WAWF,aACE,cAGF,aAKE,uBAHA,aACA,sBAGA,mBALA,kBAOA,oBAEE,gBAEA,YAHA,oBAEA,aAKJ,aACE,kBAEA,WADA,SAIF,YAEE,eAIA,eAEE,mBADA,YAKJ,aACE,eACA,mBAEA,gBAGF,aAOE,mBAHA,mBACA,mBAMA,WALA,aAIA,eADA,mBADA,QANA,iBACA,kBAFA,yCAYA,iBACE,WAIJ,eAOE,yBADA,0BALA,aACA,2BAEA,SADA,uBAEA",
+        "names": [],
+        "sources": [
+          "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Modal.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709841038823,
+      "end": 1709841038823,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709841038823,
+      "end": 1709841038823,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709841038823,
+      "end": 1709841038823,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".modal-bg[data-v-b9aa7862]{align-items:center;background-color:rgba(0,0,0,.5);display:flex;height:100vh;justify-content:center;left:0;overflow-y:scroll;position:fixed;top:0;width:100vw}.modal[data-v-b9aa7862]{background-color:#1f3465;border:1px solid #192450;border-radius:20px;color:#a4c2e4;display:flex;flex-direction:column;font-size:20px;height:500px;justify-content:space-between;margin:70px 20px;text-align:center;width:420px;z-index:-2}.modal-glow[data-v-b9aa7862]{position:absolute;width:200px;z-index:-1}.modal-control[data-v-b9aa7862],.modal-name[data-v-b9aa7862]{background-color:#192450;border-radius:20px;z-index:1}.modal-name[data-v-b9aa7862]{align-items:center;border-bottom-left-radius:0;border-bottom-right-radius:0;color:#6fa9ff;display:flex;font-size:18px;height:60px;justify-content:center;width:100%}.modal-input[data-v-b9aa7862]{margin:20px 0}.modal-close[data-v-b9aa7862]{box-shadow:insert none;display:flex;justify-content:right;padding:0 10px 0 0;position:relative}.modal-close button[data-v-b9aa7862]{background:none;border:none;margin-bottom:-60px;outline:none}.modal-timer[data-v-b9aa7862]{position:absolute;right:15px;top:13px}.modal-body[data-v-b9aa7862]{padding:0 40px}.modal-img img[data-v-b9aa7862]{margin-bottom:20px;width:120px}.modal-title[data-v-b9aa7862]{font-size:22px;font-weight:bolder;margin:0 0 20px}.modal-cones[data-v-b9aa7862]{align-items:center;background:#0900b1;border-radius:20px;color:#fff;display:flex;font-size:20pt;font-weight:bolder;gap:5px;margin:20px auto;padding:10px 20px;width:-moz-fit-content;width:fit-content}.modal-cones img[data-v-b9aa7862]{width:30px}.modal-control[data-v-b9aa7862]{border-top-left-radius:0;border-top-right-radius:0;display:flex;flex-direction:row-reverse;gap:30px;justify-content:center;padding:20px}",
+      "start": 1709841038824,
+      "end": 1709841038825,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Modal.vue",
+        "mappings": "AAAA,2BAAU,kBAAkB,CAAC,+BAA+B,CAAC,YAAY,CAAC,YAAY,CAAC,sBAAsB,CAAC,MAAM,CAAC,iBAAiB,CAAC,cAAc,CAAC,KAAK,CAAC,WAAW,CAAC,wBAAO,wBAAwB,CAAC,wBAAwB,CAAC,kBAAkB,CAAC,aAAa,CAAC,YAAY,CAAC,qBAAqB,CAAC,cAAc,CAAC,YAAY,CAAC,6BAA6B,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,WAAW,CAAC,UAAU,CAAC,6BAAY,iBAAiB,CAAC,WAAW,CAAC,UAAU,CAAC,6DAA2B,wBAAwB,CAAC,kBAAkB,CAAC,SAAS,CAAC,6BAAY,kBAAkB,CAAC,2BAA2B,CAAC,4BAA4B,CAAC,aAAa,CAAC,YAAY,CAAC,cAAc,CAAC,WAAW,CAAC,sBAAsB,CAAC,UAAU,CAAC,8BAAa,aAAa,CAAC,8BAAa,sBAAsB,CAAC,YAAY,CAAC,qBAAqB,CAAC,kBAAkB,CAAC,iBAAiB,CAAC,qCAAoB,eAAe,CAAC,WAAW,CAAC,mBAAmB,CAAC,YAAY,CAAC,8BAAa,iBAAiB,CAAC,UAAU,CAAC,QAAQ,CAAC,6BAAY,cAAc,CAAC,gCAAe,kBAAkB,CAAC,WAAW,CAAC,8BAAa,cAAc,CAAC,kBAAkB,CAAC,eAAe,CAAC,8BAAa,kBAAkB,CAAC,kBAAkB,CAAC,kBAAkB,CAAC,UAAU,CAAC,YAAY,CAAC,cAAc,CAAC,kBAAkB,CAAC,OAAO,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,sBAAsB,CAAC,iBAAiB,CAAC,kCAAiB,UAAU,CAAC,gCAAe,wBAAwB,CAAC,yBAAyB,CAAC,YAAY,CAAC,0BAA0B,CAAC,QAAQ,CAAC,sBAAsB,CAAC,YAAY",
+        "names": [],
+        "sources": [
+          "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Modal.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".modal-bg[data-v-b9aa7862]{align-items:center;background-color:rgba(0,0,0,.5);display:flex;height:100vh;justify-content:center;left:0;overflow-y:scroll;position:fixed;top:0;width:100vw}.modal[data-v-b9aa7862]{background-color:#1f3465;border:1px solid #192450;border-radius:20px;color:#a4c2e4;display:flex;flex-direction:column;font-size:20px;height:500px;justify-content:space-between;margin:70px 20px;text-align:center;width:420px;z-index:-2}.modal-glow[data-v-b9aa7862]{position:absolute;width:200px;z-index:-1}.modal-control[data-v-b9aa7862],.modal-name[data-v-b9aa7862]{background-color:#192450;border-radius:20px;z-index:1}.modal-name[data-v-b9aa7862]{align-items:center;border-bottom-left-radius:0;border-bottom-right-radius:0;color:#6fa9ff;display:flex;font-size:18px;height:60px;justify-content:center;width:100%}.modal-input[data-v-b9aa7862]{margin:20px 0}.modal-close[data-v-b9aa7862]{box-shadow:insert none;display:flex;justify-content:right;padding:0 10px 0 0;position:relative}.modal-close button[data-v-b9aa7862]{background:none;border:none;margin-bottom:-60px;outline:none}.modal-timer[data-v-b9aa7862]{position:absolute;right:15px;top:13px}.modal-body[data-v-b9aa7862]{padding:0 40px}.modal-img img[data-v-b9aa7862]{margin-bottom:20px;width:120px}.modal-title[data-v-b9aa7862]{font-size:22px;font-weight:bolder;margin:0 0 20px}.modal-cones[data-v-b9aa7862]{align-items:center;background:#0900b1;border-radius:20px;color:#fff;display:flex;font-size:20pt;font-weight:bolder;gap:5px;margin:20px auto;padding:10px 20px;width:-moz-fit-content;width:fit-content}.modal-cones img[data-v-b9aa7862]{width:30px}.modal-control[data-v-b9aa7862]{border-top-left-radius:0;border-top-right-radius:0;display:flex;flex-direction:row-reverse;gap:30px;justify-content:center;padding:20px}\"",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709841038825,
+      "end": 1709841038825,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709841038825,
+      "end": 1709841038826,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709841038826,
+      "end": 1709841038826,
+      "order": "normal"
+    }
+  ]
+}

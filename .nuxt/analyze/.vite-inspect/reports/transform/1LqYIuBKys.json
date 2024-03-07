@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Button.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <button\n      :style=\"{\n        backgroundColor: darkColor(),\n        boxShadow: 'inset 0px 0px 45px ' + mainColor,\n      }\"\n    >\n    <NuxtImg v-if=\"imgSrc\" :src=\"imgSrc\" class=\"icon\"></NuxtImg>\n      <slot />\n    </button>\n  </div>\n</template>\n<script setup>\nconst props = defineProps({\n  mainColor: {\n    type: String,\n    default: \"hsl(125, 100%, 62%)\",\n  },\n\n  imgSrc: {\n    type: String,\n    default: ''\n  }\n});\n\nfunction darkColor() {\n  let color = props.mainColor;\n  if (color.slice(0, 3) == \"hsl\") {\n    let lightValue = color.slice(-5, -1);\n    return color.replace(lightValue, \" 10%\");\n  } else return color;\n}\n\n</script>\n<style lang=\"scss\" scoped>\nbutton {\n  border: none;\n  color: #ffff;\n  font-size: 14pt;\n  font-weight: bold;\n  padding: 12px 60px;\n  border-radius: 15px;\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.icon {\n  width: 20px;\n}\n</style>\n",
+      "start": 1709841037459,
+      "end": 1709841037561,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709841037561,
+      "end": 1709841037561,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709841037561,
+      "end": 1709841037561,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709841037561,
+      "end": 1709841037562,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709841037562,
+      "end": 1709841037562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709841037562,
+      "end": 1709841037562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709841037562,
+      "end": 1709841037562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709841037562,
+      "end": 1709841037562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, normalizeStyle as _normalizeStyle, createElementVNode as _createElementVNode, createElementBlock as _createElementBlock } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'Button',\n  props: {\n  mainColor: {\n    type: String,\n    default: \"hsl(125, 100%, 62%)\",\n  },\n\n  imgSrc: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\nconst props = __props;\n\nfunction darkColor() {\n  let color = props.mainColor;\n  if (color.slice(0, 3) == \"hsl\") {\n    let lightValue = color.slice(-5, -1);\n    return color.replace(lightValue, \" 10%\");\n  } else return color;\n}\n\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtImg = _resolveComponent(\"NuxtImg\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createElementVNode(\"button\", {\n      style: _normalizeStyle({\n        backgroundColor: darkColor(),\n        boxShadow: 'inset 0px 0px 45px ' + __props.mainColor,\n      })\n    }, [\n      (__props.imgSrc)\n        ? (_openBlock(), _createBlock(_component_NuxtImg, {\n            key: 0,\n            src: __props.imgSrc,\n            class: \"icon\"\n          }, null, 8, [\"src\"]))\n        : _createCommentVNode(\"\", true),\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ], 4)\n  ]))\n}\n}\n\n}\n\n\nimport \"/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Button.vue?vue&type=style&index=0&scoped=56669cd1&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-56669cd1\"]])",
+      "start": 1709841037562,
+      "end": 1709841037563,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/node_modules/@nuxt/image/dist/runtime/components/nuxt-img\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, renderSlot as _renderSlot, normalizeStyle as _normalizeStyle, createElementVNode as _createElementVNode, createElementBlock as _createElementBlock } from \"vue\"\n\n\nconst _sfc_main = {\n  __name: 'Button',\n  props: {\n  mainColor: {\n    type: String,\n    default: \"hsl(125, 100%, 62%)\",\n  },\n\n  imgSrc: {\n    type: String,\n    default: ''\n  }\n},\n  setup(__props) {\n\nconst props = __props;\n\nfunction darkColor() {\n  let color = props.mainColor;\n  if (color.slice(0, 3) == \"hsl\") {\n    let lightValue = color.slice(-5, -1);\n    return color.replace(lightValue, \" 10%\");\n  } else return color;\n}\n\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtImg = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createElementVNode(\"button\", {\n      style: _normalizeStyle({\n        backgroundColor: darkColor(),\n        boxShadow: 'inset 0px 0px 45px ' + __props.mainColor,\n      })\n    }, [\n      (__props.imgSrc)\n        ? (_openBlock(), _createBlock(_component_NuxtImg, {\n            key: 0,\n            src: __props.imgSrc,\n            class: \"icon\"\n          }, null, 8, [\"src\"]))\n        : _createCommentVNode(\"\", true),\n      _renderSlot(_ctx.$slots, \"default\", {}, undefined, true)\n    ], 4)\n  ]))\n}\n}\n\n}\n\n\nimport \"/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/Button.vue?vue&type=style&index=0&scoped=56669cd1&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-56669cd1\"]])",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709841037563,
+      "end": 1709841037563,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709841037563,
+      "end": 1709841037564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709841037564,
+      "end": 1709841037564,
+      "order": "normal"
+    }
+  ]
+}

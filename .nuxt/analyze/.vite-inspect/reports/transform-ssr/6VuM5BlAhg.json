@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/ReverseTimer.vue?vue&type=style&index=0&scoped=c31a770b&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n\n.timer {\n  width: 35px;\n  height: 35px;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0;\n\n  &-counter {\n    background-color: rgb(11, 3, 49);\n    color: rgb(196, 206, 255);\n    font-size: 12px;\n    width: 30px;\n    height: 30px;\n    border-radius: 50%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n}\n",
+      "start": 1709841038894,
+      "end": 1709841038894,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/ReverseTimer.vue"
+        ],
+        "names": [],
+        "mappings": ";;AAkDA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACL,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;EAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACnB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;;EAET,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC;IAChC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACzB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACf,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;IAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;IACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACvB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACrB;AACF",
+        "file": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/ReverseTimer.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <Transition>\n    <div\n      class=\"timer\"\n      :style=\"{\n        background: `conic-gradient( rgb(11, 3, 49) ${progress}%, rgb(196, 206, 255) 0)`,\n      }\"\n    >\n      <div class=\"timer-counter\">\n        {{ time }}\n      </div>\n    </div></Transition\n  >\n</template>\n<script setup>\nconst props = defineProps({\n  countSecond: {\n    type: Number,\n    default: 21,\n  },\n});\n\nconst time = ref(props.countSecond);\nconst progress = ref(0);\n\nconst loop = () => {\n  const progressInterval = 100 / time.value;\n  const interval = setInterval(() => {\n    if (time.value > 0) {\n      time.value -= 1;\n      progress.value += progressInterval;\n    } else {\n      clearInterval(interval);\n      emitEvent();\n    }\n  }, 1000);\n};\n\nconst emits = defineEmits(['customEvent']);\n\nconst emitEvent = () => {\n  emits('customEvent', 'Timer stop');\n}\n\nonMounted(() => {\n  loop();\n});\n</script>\n<style scoped lang=\"scss\">\n\n.timer {\n  width: 35px;\n  height: 35px;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0;\n\n  &-counter {\n    background-color: rgb(11, 3, 49);\n    color: rgb(196, 206, 255);\n    font-size: 12px;\n    width: 30px;\n    height: 30px;\n    border-radius: 50%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709841038894,
+      "end": 1709841038894,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709841038894,
+      "end": 1709841038894,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709841038894,
+      "end": 1709841038894,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709841038894,
+      "end": 1709841038894,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709841038894,
+      "end": 1709841038894,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".timer{height:35px;margin:0;width:35px}.timer,.timer-counter{align-items:center;border-radius:50%;display:flex;justify-content:center}.timer-counter{background-color:#0b0331;color:#c4ceff;font-size:12px;height:30px;width:30px}",
+      "start": 1709841038894,
+      "end": 1709841038912,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/ReverseTimer.vue",
+        "mappings": "AAEA,OAEE,YAKA,SANA,WAQA,sBAHA,mBAHA,kBACA,aACA,uBAIA,eACE,yBACA,cACA,eAEA,YADA",
+        "names": [],
+        "sources": [
+          "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/ReverseTimer.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709841038912,
+      "end": 1709841038912,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709841038912,
+      "end": 1709841038912,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709841038912,
+      "end": 1709841038912,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".timer[data-v-c31a770b]{height:35px;margin:0;width:35px}.timer[data-v-c31a770b],.timer-counter[data-v-c31a770b]{align-items:center;border-radius:50%;display:flex;justify-content:center}.timer-counter[data-v-c31a770b]{background-color:#0b0331;color:#c4ceff;font-size:12px;height:30px;width:30px}",
+      "start": 1709841038912,
+      "end": 1709841038913,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/ReverseTimer.vue",
+        "mappings": "AAAA,wBAAO,WAAW,CAAC,QAAQ,CAAC,UAAU,CAAC,wDAAsB,kBAAkB,CAAC,iBAAiB,CAAC,YAAY,CAAC,sBAAsB,CAAC,gCAAe,wBAAwB,CAAC,aAAa,CAAC,cAAc,CAAC,WAAW,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/alenaboholdina/Desktop/VUE-PROJECTS/playvision-test-2/components/base/ReverseTimer.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709841038913,
+      "end": 1709841038913,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038913,
+      "end": 1709841038913,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038913,
+      "end": 1709841038913,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709841038913,
+      "end": 1709841038913,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709841038913,
+      "end": 1709841038913,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709841038913,
+      "end": 1709841038913,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709841038913,
+      "end": 1709841038913,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709841038913,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709841038914,
+      "end": 1709841038914,
+      "order": "normal"
+    }
+  ]
+}
